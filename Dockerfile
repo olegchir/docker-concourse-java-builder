@@ -4,7 +4,7 @@ MAINTAINER Oleg Chirukhin "olegchiruhin@gmail.com"
 ENV MAVEN_HOME="/usr/share/maven"
 ENV MAVEN_VERSION="3.3.9"
 
-ADD /var/lib/concourse/m2 /
+ADD ./m2 /
 
 RUN apk update && \
     apk add git && \
